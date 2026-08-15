@@ -13,3 +13,4 @@ site/.svelte-kit/
 .filepress-genie/
 dist/
 *.log
+.scratch/
