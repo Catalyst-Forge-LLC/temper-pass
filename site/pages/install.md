@@ -1,10 +1,10 @@
 ---
 title: Install
-description: Point an agent at a TemperPass skill file. Copy the folder; do not add an unpublished npm package.
+description: Point an agent at a TemperPass skill file. Copy the folder.
 order: 1
 ---
 
-TemperPass is Markdown you point an agent at. There is no published npm package yet. The name `temperpass` is reserved; do not run `pnpm add temperpass` until this page says otherwise.
+TemperPass is Markdown you point an agent at. Copy a folder from `passes/`. There is no npm package.
 
 ## Copy a pass
 
@@ -25,12 +25,6 @@ Called passes do not fire on their own. Say the name.
 
 ## Why the descriptions are narrow
 
-Standard skill-authoring advice says to make descriptions *pushy*, because models under-trigger. TemperPass is the exception. Its cost lands on the user as interruption and delay, and it lands on every match, including the false ones. So the descriptions here are narrow: a tight target, explicit negative cases, and a called pass over an auto pass whenever there's doubt.
+Standard skill-authoring advice says to make descriptions *pushy*, because models under-trigger. TemperPass does the opposite, on purpose. A match costs an interruption, including the false ones, so the descriptions here are narrow: a tight target, explicit negative cases, and a called pass over an auto pass whenever there's doubt.
 
 Do not "fix" this later by broadening the descriptions. This is the design.
-
-## CLI (later)
-
-Verb-first, so "pass" never reads as a status:
-
-`temper clarify` · `temper red-team` · `temper scope-lock` · `temper tradeoff-matrix`
