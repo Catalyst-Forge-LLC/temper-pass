@@ -9,7 +9,7 @@
 **Name:** TemperPass
 **Domain:** temperpass.dev
 **Repo:** `Catalyst-Forge-LLC/temper-pass`
-**npm:** `temperpass` *(verify with `npm view temperpass` before announcing)*
+**npm:** `temperpass` `0.1.0` — first public package. Skills only; no CLI.
 **CLI:** `temper`
 
 **Tagline:** Tempered judgment your agent can install. (Supersedes "A light pass before the answer.", which now closes the "Why the name" section — the line is kept verbatim, it just stopped being the headline. Masthead subtitle: "Tempered judgment for AI agents.")

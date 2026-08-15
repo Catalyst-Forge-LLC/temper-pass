@@ -39,16 +39,19 @@ Four is the whole set. The first draft had nine, and half of them (premortem, st
 
 ## Install
 
-Copy a skill file into your agent's skill directory. Cursor looks for `SKILL.md` in a named folder.
+```bash
+pnpm add temperpass
+```
+
+Copy one folder from `node_modules/temperpass/passes/` into your agent's skill directory. Cursor looks for `SKILL.md` in a named folder.
 
 ```bash
+# or clone and copy from the repo
 git clone https://github.com/Catalyst-Forge-LLC/temper-pass.git
 # then copy passes/clarify-first/  or  passes/red-team/  into your agent skills path
 ```
 
 Point the agent at the file. For a called pass, say the name: **red-team this**, **scope-lock this**. It will not fire on its own.
-
-The npm name `temperpass` is reserved for a later package. Do not `pnpm add temperpass` yet; it is not published.
 
 Site: [temperpass.dev](https://temperpass.dev)
 

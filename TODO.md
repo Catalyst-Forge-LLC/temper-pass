@@ -20,11 +20,11 @@ _Flat list for now. Reorganize by brand pillars in Phase 6._
 
 ## Publish
 
-- [ ] Make `Catalyst-Forge-LLC/temper-pass` public
+- [x] Make `Catalyst-Forge-LLC/temper-pass` public
 - [ ] Confirm domain temperpass.dev and Cloudflare Pages project `temperpass`
 - [ ] `pnpm ship` and attach the custom domain
 - [ ] Shelf entry on catalystforge.com/open-source/
-- [ ] Publish npm `temperpass` only when the package shape is ready
+- [ ] Publish npm `temperpass` `0.1.0` (package shape ready; you publish)
 - [ ] `temper` CLI (verb-first) — later
 
 ## Parked (README roadmap only — no empty skill dirs)

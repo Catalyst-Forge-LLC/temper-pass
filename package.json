@@ -1,11 +1,20 @@
 {
 	"name": "temperpass",
-	"version": "0.0.1",
-	"private": true,
+	"version": "0.1.0",
+	"private": false,
 	"type": "module",
 	"description": "Tempered judgment your agent can install. Expert skills for AI agents.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
+	"keywords": [
+		"ai",
+		"agents",
+		"skills",
+		"cursor",
+		"claude",
+		"prompts",
+		"judgment"
+	],
 	"homepage": "https://temperpass.dev",
 	"repository": {
 		"type": "git",
@@ -14,11 +23,18 @@
 	"bugs": {
 		"url": "https://github.com/Catalyst-Forge-LLC/temper-pass/issues"
 	},
+	"exports": {
+		"./passes/*": "./passes/*",
+		"./package.json": "./package.json"
+	},
 	"files": [
 		"passes",
 		"README.md",
 		"LICENSE"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"site:dev": "pnpm --dir site dev",
 		"site:build": "pnpm --dir site run build",

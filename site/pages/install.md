@@ -1,18 +1,26 @@
 ---
 title: Install
-description: Point an agent at a TemperPass skill file. Copy the folder.
+description: Point an agent at a TemperPass skill file. pnpm add temperpass, then copy a folder.
 order: 1
 ---
 
-TemperPass is Markdown you point an agent at. Copy a folder from `passes/`. There is no npm package.
+TemperPass is Markdown you point an agent at. Install the package, then copy one folder from `passes/` into your agent's skill directory. Cursor expects a named folder containing `SKILL.md`.
 
-## Copy a pass
+## From npm
+
+```bash
+pnpm add temperpass
+```
+
+The skills land at `node_modules/temperpass/passes/`. Copy `clarify-first/`, `red-team/`, `scope-lock/`, or `tradeoff-matrix/`.
+
+## From the repo
 
 ```bash
 git clone https://github.com/Catalyst-Forge-LLC/temper-pass.git
 ```
 
-Copy one folder from `passes/` into your agent's skill directory. Cursor expects a named folder containing `SKILL.md`.
+Same folders, under `passes/` at the repo root.
 
 | Pass | Path | When |
 | --- | --- | --- |
