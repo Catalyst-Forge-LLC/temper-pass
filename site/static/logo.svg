@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="TemperPass">
+	<title>TemperPass</title>
+	<style>
+		.beam { fill: #1a1917; }
+		.wedge { fill: #c4a035; }
+		.load { fill: #6b3d7a; }
+		@media (prefers-color-scheme: dark) {
+			.beam { fill: #cfc9bd; }
+			.wedge { fill: #e0c15a; }
+			.load { fill: #b784c4; }
+		}
+	</style>
+
+	<!-- Load and beam rotate together so the weight stays seated on the beam -->
+	<g transform="rotate(-8 32 27)">
+		<rect class="load" x="8" y="13" width="13" height="10" rx="3" />
+		<rect class="beam" x="3" y="23" width="58" height="8" rx="4" />
+	</g>
+	<path class="wedge" d="M32 33 42 55H22Z" />
+</svg>

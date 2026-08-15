@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="TemperPass">
+	<title>TemperPass</title>
+	<style>
+		.beam { fill: #1a1917; }
+		.wedge { fill: #c4a035; }
+		@media (prefers-color-scheme: dark) {
+			.beam { fill: #cfc9bd; }
+			.wedge { fill: #e0c15a; }
+		}
+	</style>
+
+	<!-- The load is dropped here: below 20px it fills in as a blob -->
+	<rect class="beam" x="1" y="10" width="30" height="5" rx="2.5" transform="rotate(-8 16 12.5)" />
+	<path class="wedge" d="M16 16 22.5 29H9.5Z" />
+</svg>

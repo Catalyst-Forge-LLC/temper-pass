@@ -1,0 +1,87 @@
+/* TemperPass — severity tokens, chrome width, and first-paint color.
+
+   FilePress inlines :root blocks and top-level `html body {}` as critical
+   CSS. Its extractor copies nested :root rules without their @media
+   wrapper, so a dark :root would paint light-mode visitors in the dark
+   palette until the full sheet arrives. Both color-scheme queries stay
+   so the leaked dark block is corrected in the same <style> tag.
+
+   :root:root beats Essay if Vite emits the engine sheet after this one.
+   --measure-wide stays at Essay's 46rem; header/footer are widened
+   below. Changing the token made both .wrap columns jump 46 → 58, then
+   main snapped back. */
+
+:root:root {
+	--temper-straw: #c4a035;
+	--temper-purple: #6b3d7a;
+	--temper-blue: #3d6b8a;
+	--accent: #6b3d7a;
+	--accent-strong: #4e2c59;
+	--bg: #f3efe6;
+	--surface: #fffdf8;
+}
+
+@media (prefers-color-scheme: light) {
+	:root:root {
+		--temper-straw: #c4a035;
+		--temper-purple: #6b3d7a;
+		--temper-blue: #3d6b8a;
+		--accent: #6b3d7a;
+		--accent-strong: #4e2c59;
+		--bg: #f3efe6;
+		--surface: #fffdf8;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:root {
+		--temper-straw: #e0c15a;
+		--temper-purple: #b784c4;
+		--temper-blue: #7eafc8;
+		--accent: #b784c4;
+		--accent-strong: #d0a8db;
+		--bg: #12110e;
+		--surface: #1a1914;
+	}
+}
+
+/* Inlined as critical — page color before Essay's body rule arrives. */
+html body {
+	background: var(--bg);
+	color: var(--ink);
+}
+
+.site-header {
+	margin-bottom: 0;
+}
+
+header.site-header .wrap,
+.site-footer .wrap {
+	max-width: 58rem;
+}
+
+main.wrap {
+	max-width: 46rem;
+	background: var(--surface);
+	padding-top: clamp(1.6rem, 3.5vw, 2.25rem);
+	padding-bottom: clamp(2rem, 4vw, 2.75rem);
+	box-shadow: inset 0 10px 18px -12px color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+	main.wrap {
+		box-shadow: inset 0 12px 20px -12px rgb(0 0 0 / 0.45);
+	}
+}
+
+.temper-straw {
+	color: var(--temper-straw);
+}
+
+.temper-purple {
+	color: var(--temper-purple);
+}
+
+.temper-blue {
+	color: var(--temper-blue);
+}
