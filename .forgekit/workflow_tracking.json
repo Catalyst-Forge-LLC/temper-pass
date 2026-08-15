@@ -1,0 +1,294 @@
+{
+  "project": {
+    "name": "TemperPass",
+    "created": "2026-08-15",
+    "description": "FilePress site at temperpass.dev plus agent passes that take the brittleness out of a decision before the agent commits to an answer.",
+    "archetype": "product",
+    "status": "active"
+  },
+  "currentPhase": "2-scaffolding",
+  "phases": {
+    "1-architecture": {
+      "status": "completed",
+      "startedAt": "2026-08-15",
+      "completedAt": "2026-08-15",
+      "exitCriteriaMet": [
+        "Tech choices confirmed",
+        "Folder structure confirmed",
+        "Data model shape confirmed",
+        "First feature batch defined",
+        "Claude's understanding verified by user",
+        "PHASE_1_BRIEF.md created, complete, and locked (docs/)",
+        "Major decisions recorded in workflow_tracking.json decisions[]"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        "User confirmed: repo + site now; remaining passes refined shortly; spec copy into README and site.",
+        "Brief locked from temperpass-spec-v4.md. FilePress static, MIT (switched from Apache), site/ + passes/."
+      ]
+    },
+    "2-scaffolding": {
+      "status": "in_progress",
+      "startedAt": "2026-08-15",
+      "completedAt": null,
+      "exitCriteriaMet": [
+        "Spec copy visible on home and README",
+        "Pass pages render from markdown",
+        "Hero flow functions end to end",
+        "CONTEXT_PROMPT.md created and populated by merging PHASE_1_BRIEF.md",
+        "README.md created (manifesto from spec v4)",
+        "TODO.md created (seeded from PHASE_1_BRIEF §11)",
+        "IDEAS.md created (from ForgeKit template)",
+        "Phase 2 doc scope only per WORKFLOW §1a (no premature extra templates)"
+      ],
+      "exitCriteriaRemaining": [
+        "Site runs with pnpm --dir site dev"
+      ],
+      "notes": [
+        "Pruned 'Core CRUD works' — static FilePress site, no CRUD.",
+        "pnpm site:build succeeded 2026-08-15. Mill copy present in site/build/index.html. filepress check fails inside getfilepress (engine svelte-check), not site content."
+      ]
+    },
+    "3-stabilization": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Site builds with no deploy-time secrets",
+        "filepress check passes",
+        "Hero flow completes without infrastructure errors",
+        "Skill paths and GitHub links are honest (no npm install advertised until published)"
+      ],
+      "notes": [
+        "Pruned generic API/env criteria — no backend."
+      ]
+    },
+    "4-feature-iteration": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Core value proposition delivered",
+        "Hero flow works with real data including edge cases",
+        "Features tested beyond happy path"
+      ],
+      "notes": [],
+      "iterations": []
+    },
+    "5-refactoring": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "No file exceeds ~500 lines without justification",
+        "Shared utilities extracted",
+        "No duplicated patterns",
+        "Build passes after each refactor"
+      ],
+      "notes": []
+    },
+    "6-strategic-review": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "BRAND_AND_PRODUCT.md created (from ForgeKit template)",
+        "TODO reorganized by brand value pillars",
+        "Features mapped to brand pillars",
+        "Gap between brand promise and product identified",
+        "IDEAS.md processed into TODO",
+        "Build order decided"
+      ],
+      "notes": []
+    },
+    "7-hardening": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "CODE_QUALITY.md produced (from ForgeKit template) and critical findings fixed",
+        "BLACK_HAT_REPORT.md produced (via ForgeKit security audit) and critical/high findings fixed",
+        "All findings triaged into TODO.md with P0/P1/P2 priority",
+        "No silent failures in core workflows",
+        "DEPLOYMENT.md created (from ForgeKit template)",
+        "TEST_PLAN.md complete or extended (from ForgeKit template)",
+        "TECHNICAL_REFERENCE.md complete and current",
+        "Docs alignment audit passed (via ForgeKit docs-alignment audit)",
+        "All documentation consolidated and cross-referenced"
+      ],
+      "notes": [
+        "Pruned auth, payments, BUSINESS_PLAN, and LLM field-size criteria — static public site, no paid users in v1."
+      ]
+    }
+  },
+  "decisions": [
+    {
+      "id": "D1",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "FilePress static site at temperpass.dev; no PocketBase or auth",
+      "rationale": "No state needs to outlive the browser. Matches shelf sites (aiBreze, IngotVault)."
+    },
+    {
+      "id": "D2",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "One repo holds skills (passes/) and the site (site/)",
+      "rationale": "User asked for repo + site now."
+    },
+    {
+      "id": "D3",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "MIT (supersedes Apache 2.0)",
+      "rationale": "Closest structural cousin is aiBreze. Patent grant matters more for ForgeKit/IngotVault than for Markdown skills."
+    },
+    {
+      "id": "D4",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Pass pages are flat FilePress slugs (/red-team), not /passes/[name]",
+      "rationale": "FilePress pages are pages/<slug>.md only. Spec §9 nested path was written before this constraint was locked."
+    },
+    {
+      "id": "D5",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Spec v4 copy is the source of truth for README and site",
+      "rationale": "User asked that the mill and collection copy land as written. One source per string class."
+    },
+    {
+      "id": "D6",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "v1 install is copy-the-skill from this repo; do not announce npm until published",
+      "rationale": "npm name temperpass is free (404) but unpublished. Advertising pnpm add would 404."
+    },
+    {
+      "id": "D7",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Ship all four passes now; lock remaining three shortly",
+      "rationale": "User: we will work on the other skills to refine and lock them shortly."
+    },
+    {
+      "id": "D8",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Ship the FilePress site now",
+      "rationale": "User overrode spec §9 / §12 repo-first, site-later."
+    },
+    {
+      "id": "D9",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Prune CRUD, auth, payments, and PocketBase exit criteria from tracking",
+      "rationale": "Static content product. Archetype remains product."
+    },
+    {
+      "id": "D10",
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "decision": "Drop /philosophy, /using, and a filtered pass index",
+      "rationale": "Spec §9: philosophy belongs on the home page; four items do not need an index."
+    },
+    {
+      "id": "D11",
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "decision": "Record the origin: Vox X post (14 Aug 2026) during Saturday morning coffee; product is the hour after, not the tweet itself",
+      "rationale": "User: it is critical to include and account for the origin story. Credit https://x.com/Voxyz_ai/status/2088327172725592142. Fork: tweet waits; clarify-first answers anyway."
+    },
+    {
+      "id": "D12",
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "decision": "Lock scope-lock and tradeoff-matrix; mark clarify-first validated (same-session)",
+      "rationale": "User asked to flesh out the two called passes and validate the auto pass, negatives first. Each recorded a failed first run that forced a protocol step."
+    }
+  ],
+  "gotchas": [
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "gotcha": "FilePress adapter-static fails the build if there are zero posts: Routes marked prerenderable but not prerendered: /posts/[slug]. Ship at least one real post.",
+      "fix": "Added site/posts/why-descriptions-are-written-backwards.md from spec copy."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "gotcha": "filepress check runs svelte-check against getfilepress package sources and reports dozens of node type errors. Not a site-content failure.",
+      "fix": "Treat pnpm site:build as the spine verification, not site:check, until the engine check is quiet."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "gotcha": "clarify-first fired on 'the tests are flaky' when the gate lived only in the intro. Underspecified is not enough; undo cost must also be high.",
+      "fix": "Protocol step 0: both conditions, and do not announce a skip."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "gotcha": "scope-lock invented HR nouns to fill a contract on 'hire a senior engineer.'",
+      "fix": "Step 1 forbids new nouns; if the one sentence cannot be written, stop."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "gotcha": "tradeoff-matrix scored Railway vs Fly vs Render Postgres as three architectures.",
+      "fix": "Step 1: vendor/host/color for the same architecture is one option. Collapse and stop."
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-08-15",
+      "phase": "1-architecture",
+      "summary": "Greenfield kickoff. Wrote project tracking and agent guardrails. Existing spec v4, red-team skill, and validation transcripts already in the folder."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "User locked repo + site now. Brief written and locked. Scaffolding passes/, FilePress site, README from spec copy."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Origin story from Vox X post recorded. scope-lock and tradeoff-matrix locked with failed-run transcripts. clarify-first validated; step 0 added after a false trigger on a cheap flake question."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "README and home now lead with the right-question thesis and the four passes; name and origin moved down. clarify-first added to site nav. License switched to MIT."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Masthead tagline now names the category (Expert skills for AI agents); hero leads with the claim. clarify-first step 4 revised: one question by default, a second only when independent and independently decision-changing, compound questions count as two. Recorded as P2 in examples/evals."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Headline changed to 'Judgment your agent can install.'; the old tagline now closes 'Why the name' verbatim. Nav collapsed to a single Passes entry backed by a new /passes index page. 'Wisdom' kept out of copy per overlay; 'tempered judgment' allowed as the brand phrase."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Headline is now 'Tempered judgment your agent can install.' aiBreze top-5 applied: flattened extra teaching contrasts, cut the setup sentence before the mill claim, dropped the hero triad, unpacked the tweet-waits pair on /clarify-first, aligned site description and /passes parked copy."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Review pass: meta description is now the shelf one-liner. theme.css restates light tokens under prefers-color-scheme: light so dark accent cannot leak onto parchment. Temper colors used on home, /passes, and the red-team sample. Spec §3/§6/§9 catch up to locked/validated status. LICENSE already MIT."
+    },
+    {
+      "date": "2026-08-15",
+      "phase": "2-scaffolding",
+      "summary": "Logo is now a mill stand (header logo.svg + 32px favicon). Git remote set to Catalyst-Forge-LLC/temper-pass."
+    }
+  ]
+}
