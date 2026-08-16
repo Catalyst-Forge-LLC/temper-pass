@@ -95,9 +95,9 @@ Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/
 
 ## On the shelf
 
-Sits under **Practice & standards**, alongside ForgeKit and aiBreze. Closest structural cousin is aiBreze: a composable rule set you point an agent at.
+Sits under **Practice & standards**, alongside ForgeTrail and aiBreze. Closest structural cousin is aiBreze: a composable rule set you point an agent at.
 
-The name does not repeat "Forge." Only ForgeKit carries the parent name; the rest of the shelf earns attention by describing itself.
+The name does not repeat "Forge." Only ForgeTrail carries the parent name; the rest of the shelf earns attention by describing itself.
 
 ## Site (local)
 

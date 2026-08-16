@@ -6,7 +6,7 @@ _Copy and paste this into a new chat to pick up where you left off._
 
 ## Handoff from Phase 1
 
-`docs/PHASE_1_BRIEF.md` is **locked** (2026-08-15). Architecture below is merged from that brief. Do not re-derive it from chat. Do not delete `.forgekit/workflow_tracking.json` → `decisions[]`.
+`docs/PHASE_1_BRIEF.md` is **locked** (2026-08-15). Architecture below is merged from that brief. Do not re-derive it from chat. Do not delete `.forgetrail/workflow_tracking.json` → `decisions[]`.
 
 ## Tech Stack
 
@@ -51,7 +51,7 @@ One pass → one skill file → one site page at `/<slug>` (flat; not `/passes/<
 
 - **DECIDED: Phase 1 — FilePress, no PocketBase/auth.** No state outlives the browser.
 - **DECIDED: Phase 1 — one repo, `passes/` + `site/`.** Repo + site now.
-- **DECIDED: Phase 1 — Apache 2.0.** ForgeKit sibling. **Superseded:** MIT (aiBreze cousin; Markdown skills, not an engine).
+- **DECIDED: Phase 1 — Apache 2.0.** ForgeTrail sibling. **Superseded:** MIT (aiBreze cousin; Markdown skills, not an engine).
 - **DECIDED: Phase 1 — flat slugs.** FilePress cannot nest `/passes/red-team`.
 - **DECIDED: Phase 1 — spec v4 is the copy source.** Tagline, shelf one-liner, mill paragraph: do not paraphrase.
 - **DECIDED: Phase 1 — no npm announce until published.** `temperpass` is free on npm (404) but unpublished.
@@ -131,7 +131,7 @@ One pass → one skill file → one site page at `/<slug>` (flat; not `/passes/<
 
 ### Session 2026-08-15
 
-- ForgeKit kickoff. User: repo + site now; spec copy into README and site; remaining skills locked shortly.
+- ForgeTrail kickoff. User: repo + site now; spec copy into README and site; remaining skills locked shortly.
 - Brief locked. Scaffolding `passes/`, `site/`, manifesto README.
 - Origin from https://x.com/Voxyz_ai/status/2088327172725592142 recorded. scope-lock + tradeoff-matrix locked. clarify-first validated; gate is now step 0.
 - aiBreze pass on public copy. Overlay at aibreze.overlay.md. Softened unsourced 15%; origin post is first person.

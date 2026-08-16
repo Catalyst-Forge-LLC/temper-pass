@@ -1,6 +1,6 @@
 # TemperPass — Phase 1 architecture brief
 
-_Structured capture of planning and architecture **before** code scaffolding. Goal: Phase 2 (or a new agent/session) can start from this file + `.forgekit/workflow_tracking.json` without re-reading the whole Phase 1 chat._
+_Structured capture of planning and architecture **before** code scaffolding. Goal: Phase 2 (or a new agent/session) can start from this file + `.forgetrail/workflow_tracking.json` without re-reading the whole Phase 1 chat._
 
 **Status:** `locked`  
 **Last updated:** 2026-08-15  
@@ -66,7 +66,7 @@ Land on temperpass.dev → get the mill in one paragraph → see the four passes
 | Styling | FilePress Essay theme + light `theme.css` tokens | confirmed | Temper straw / purple / blue for severity only. No commissioned design. |
 | Deploy / CI | Cloudflare Pages, Wrangler `pnpm ship` | confirmed | Same path as sibling sites. Domain temperpass.dev. |
 | Package manager | pnpm | confirmed | Project rule. |
-| License | MIT | confirmed | Structural cousin of aiBreze. Supersedes the ForgeKit Apache default. |
+| License | MIT | confirmed | Structural cousin of aiBreze. Supersedes the ForgeTrail Apache default. |
 | State persistence | none (A-local / static) | confirmed | Drop PocketBase and auth. |
 
 ---
@@ -131,7 +131,7 @@ Skipped. All v1 copy is hand-authored from spec v4.
 
 **D2.** One repo holds skills (`passes/`) and the site (`site/`). WHY: user asked for repo + site now; aibreze/IngotVault pattern.
 
-**D3.** MIT. WHY: closest cousin is aiBreze (skills you point an agent at). Supersedes the first-pass Apache 2.0 choice (ForgeKit sibling).
+**D3.** MIT. WHY: closest cousin is aiBreze (skills you point an agent at). Supersedes the first-pass Apache 2.0 choice (ForgeTrail sibling).
 
 **D4.** Pass pages are flat FilePress slugs (`/red-team`), not `/passes/[name]`. WHY: FilePress pages are `pages/<slug>.md` only; nested slugs are not supported. Spec §9 nested path was written before the engine constraint was locked.
 
@@ -189,5 +189,5 @@ Skipped. All v1 copy is hand-authored from spec v4.
 
 - [x] User has confirmed stack, folder shape, data sketch, hero flow, and v1 boundaries
 - [x] This brief is **locked**
-- [x] `.forgekit/workflow_tracking.json` updated with D1–D10
-- [x] Phase 2 opener will read **this file** + `.forgekit/workflow_tracking.json` first
+- [x] `.forgetrail/workflow_tracking.json` updated with D1–D10
+- [x] Phase 2 opener will read **this file** + `.forgetrail/workflow_tracking.json` first

@@ -57,6 +57,6 @@ TemperPass is one hour of a Saturday morning, after [an X post by Vox](https://x
 
 ## On the shelf
 
-Sits under **Practice & standards**, alongside ForgeKit and aiBreze. Closest cousin is aiBreze: a rule set you point an agent at.
+Sits under **Practice & standards**, alongside ForgeTrail and aiBreze. Closest cousin is aiBreze: a rule set you point an agent at.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.
