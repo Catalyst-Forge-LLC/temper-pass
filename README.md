@@ -4,9 +4,9 @@ Tempered judgment your agent can install.
 
 Most agents answer immediately and confidently. TemperPass makes them say what they're assuming first.
 
-Expert skills for Cursor, Claude Code, and anything else that reads a `SKILL.md` file. These are the checks a careful person already runs, written as a numbered protocol an agent can follow. Copy one into the skills directory and it runs over the agent's thinking on the way to the answer.
+Expert skills for Cursor, Claude Code, and anything else that reads a `SKILL.md` file. These are the checks a careful person already runs, written as a numbered protocol an agent can follow. `pnpm add temperpass`, copy one folder into the skills directory, and it runs over the agent's thinking on the way to the answer.
 
-Written **TemperPass**. CLI (later) **`temper`**. A temper mill, not a mood.
+Written **TemperPass**. A temper mill, not a mood.
 
 ## The right question
 
@@ -33,7 +33,7 @@ The auto pass fires on description match, without being asked. Because the model
 | [`scope-lock`](passes/scope-lock/SKILL.md) | Called | **Locked** | Freezes boundaries, success criteria, and explicit non-goals |
 | [`tradeoff-matrix`](passes/tradeoff-matrix/SKILL.md) | Called | **Locked** | Forces explicit criteria, weights, and scoring across genuinely different options |
 
-Four is the whole set. The first draft had nine, and half of them (premortem, steelman, first-principles) were behavior a competent model already produces when you ask for it. The protocol is the part you install; the name on the folder is a filename.
+Four is the whole set. The first draft had nine, and half of them (premortem, steelman, first-principles) were behavior a competent model already produces when you ask for it. The protocol is the part you install.
 
 **Parked, not cancelled:** `first-principles`, `option-generator`, `premortem`, `steelman`, `confidence-calibrate`. Each returns only when it has a protocol that beats "just ask the model to do this."
 
@@ -57,7 +57,7 @@ Site: [temperpass.dev](https://temperpass.dev)
 
 ## How they're written
 
-Standard skill-authoring advice says to make descriptions *pushy*, because models under-trigger. TemperPass is the exception. Its cost lands on the user as interruption and delay, and it lands on every match, including the false ones. So the descriptions here are narrow: a tight target, explicit negative cases, and a called pass over an auto pass whenever there's doubt.
+Standard skill-authoring advice says to make descriptions *pushy*, because models under-trigger. TemperPass does the opposite, on purpose. A match costs an interruption, including the false ones, so the descriptions here are narrow: a tight target, explicit negative cases, and a called pass over an auto pass whenever there's doubt.
 
 Do not "fix" this later by broadening the descriptions. This is the design.
 
@@ -93,20 +93,9 @@ The passes don't withhold your answer or reroute your work. They take out the br
 
 Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/status/2088327172725592142) posted a reasoning prompt: list the assumptions, name the missing fact, ask one question, wait. The next hour is this repo. In the tweet the model always waits; `clarify-first` answers under the assumptions and waits only when the next action is hard to undo. The write-up is on the site: [A prompt with coffee](https://temperpass.dev/posts/a-prompt-with-coffee).
 
-## On the shelf
+## On the Catalyst Forge shelf
 
-Sits under **Practice & standards**, alongside ForgeTrail and aiBreze. Closest structural cousin is aiBreze: a composable rule set you point an agent at.
-
-The name does not repeat "Forge." Only ForgeTrail carries the parent name; the rest of the shelf earns attention by describing itself.
-
-## Site (local)
-
-```bash
-pnpm install
-pnpm site:dev
-```
-
-FilePress site in `site/`. Build with `pnpm site:build`. Ship with `pnpm ship` (Cloudflare Pages project `temperpass`).
+Lives next to ForgeTrail and aiBreze. Closest cousin is aiBreze: a rule set you point an agent at.
 
 ## License
 

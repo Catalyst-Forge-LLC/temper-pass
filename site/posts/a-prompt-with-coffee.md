@@ -24,4 +24,4 @@ The first time I ran `clarify-first` for real, I gave it "the tests are flaky." 
 
 The one-question rule broke the same way. On a billing migration with two gaps that both flipped the recommendation, a hard cap of one joined them with "and" into one sentence, harder to answer than either would have been alone. One is still the default. A second is allowed when it is independent and changes the recommendation by itself, and a compound question counts as two. The interrupt budget was always the point; the number was a proxy for it.
 
-The repo and this site are that hour. [Copy a pass](/install) into your agent's skills directory and point it at the file.
+The repo and this site are that hour. [Install a pass](/install) and point your agent at the file.
