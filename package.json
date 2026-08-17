@@ -40,7 +40,8 @@
 		"site:build": "pnpm --dir site run build",
 		"site:check": "pnpm --dir site check",
 		"site:preview": "pnpm --dir site preview",
-		"ship": "pnpm --dir site run ship"
+		"ship": "pnpm --dir site run ship",
+		"prepublishOnly": "node scripts/publish-gate.mjs"
 	},
 	"engines": {
 		"node": ">=20"
