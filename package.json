@@ -36,7 +36,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"site:dev": "pnpm --dir site dev -- --host",
+		"site:dev": "pnpm --dir site dev",
 		"site:build": "pnpm --dir site run build",
 		"site:check": "pnpm --dir site check",
 		"site:preview": "pnpm --dir site preview",
