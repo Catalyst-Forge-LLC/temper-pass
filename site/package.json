@@ -4,8 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "node ../scripts/ensure-lease.mjs temperpass-site 5185 && filepress dev --host 0.0.0.0",
-		"build": "filepress build",
+		"dev": "node ../scripts/sync-skill-static.mjs && node ../scripts/ensure-lease.mjs temperpass-site 5185 && filepress dev --host 0.0.0.0",
+		"build": "node ../scripts/sync-skill-static.mjs && filepress build",
 		"preview": "filepress preview",
 		"check": "filepress check",
 		"ship": "pnpm build && wrangler pages deploy build --project-name=temperpass",

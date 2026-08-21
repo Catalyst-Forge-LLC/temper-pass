@@ -1,3 +1,4 @@
+site/static/skills/
 node_modules/
 .env
 .env.*
