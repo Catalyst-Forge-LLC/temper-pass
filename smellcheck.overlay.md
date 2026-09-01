@@ -1,6 +1,6 @@
-# aiBreze overlay — TemperPass
+# Smell Check overlay — TemperPass
 
-Point at `aibreze` `rules/core.md`. Do not copy the bans here.
+Point at `smellcheck` `rules/core.md`. Do not copy the bans here.
 
 ## Pronouns
 
