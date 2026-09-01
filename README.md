@@ -97,7 +97,7 @@ Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/
 
 ## On the Catalyst Forge shelf
 
-Lives next to ForgeTrail and aiBreze. Closest cousin is aiBreze: a rule set you point an agent at.
+Lives next to ForgeTrail and Smell Check. Closest cousin is Smell Check: a rule set you point an agent at.
 
 <!-- xfacts-nutrition-label -->
 

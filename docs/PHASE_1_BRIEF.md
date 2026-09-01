@@ -59,14 +59,14 @@ Land on temperpass.dev → get the mill in one paragraph → see the four passes
 
 | Area | Choice | Status | Notes / WHY |
 | --- | --- | --- | --- |
-| Framework | FilePress (`getfilepress` ^0.1.3) | confirmed | Shelf standard for product sites (aiBreze, IngotVault). |
+| Framework | FilePress (`getfilepress` ^0.1.3) | confirmed | Shelf standard for product sites (Smell Check, IngotVault). |
 | Language | TypeScript ESM | confirmed | Config only; skills are Markdown. |
 | DB / backend | none | confirmed | Static site. No state that outlives the browser. |
 | Auth / storage | none | confirmed | Public docs + skills. |
 | Styling | FilePress Essay theme + light `theme.css` tokens | confirmed | Temper straw / purple / blue for severity only. No commissioned design. |
 | Deploy / CI | Cloudflare Pages, Wrangler `pnpm ship` | confirmed | Same path as sibling sites. Domain temperpass.dev. |
 | Package manager | pnpm | confirmed | Project rule. |
-| License | MIT | confirmed | Structural cousin of aiBreze. Supersedes the ForgeTrail Apache default. |
+| License | MIT | confirmed | Structural cousin of Smell Check. Supersedes the ForgeTrail Apache default. |
 | State persistence | none (A-local / static) | confirmed | Drop PocketBase and auth. |
 
 ---
@@ -129,9 +129,9 @@ Skipped. All v1 copy is hand-authored from spec v4.
 
 **D1.** FilePress static site at temperpass.dev, no PocketBase or auth. WHY: no state needs to outlive the browser; matches shelf sites.
 
-**D2.** One repo holds skills (`passes/`) and the site (`site/`). WHY: user asked for repo + site now; aibreze/IngotVault pattern.
+**D2.** One repo holds skills (`passes/`) and the site (`site/`). WHY: user asked for repo + site now; Smell Check/IngotVault pattern.
 
-**D3.** MIT. WHY: closest cousin is aiBreze (skills you point an agent at). Supersedes the first-pass Apache 2.0 choice (ForgeTrail sibling).
+**D3.** MIT. WHY: closest cousin is Smell Check (skills you point an agent at). Supersedes the first-pass Apache 2.0 choice (ForgeTrail sibling).
 
 **D4.** Pass pages are flat FilePress slugs (`/red-team`), not `/passes/[name]`. WHY: FilePress pages are `pages/<slug>.md` only; nested slugs are not supported. Spec §9 nested path was written before the engine constraint was locked.
 

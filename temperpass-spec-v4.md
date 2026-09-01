@@ -26,7 +26,7 @@ The passes don't withhold your answer or reroute your work. They take out the br
 
 ### Fit with the shelf
 
-Sits under **Practice & standards**, alongside ForgeTrail and aiBreze. Its closest structural cousin is aiBreze: a composable rule set you point an agent at. ForgeTrail governs how agents *build*; aiBreze governs how they *write*; TemperPass governs how they *decide*.
+Sits under **Practice & standards**, alongside ForgeTrail and Smell Check. Its closest structural cousin is Smell Check: a composable rule set you point an agent at. ForgeTrail governs how agents *build*; Smell Check governs how they *write*; TemperPass governs how they *decide*.
 
 The name deliberately does not repeat "Forge." Only ForgeTrail carries the parent name; the rest of the shelf earns attention by describing itself (FilePress presses files, IngotVault vaults ingots, AppFacts states facts). TemperPass follows the shelf's actual pattern rather than its branding.
 
@@ -253,7 +253,7 @@ temper-pass/
 
 Drop `/philosophy`, `/using`, and the filtered index. The philosophy is three paragraphs and belongs on the home page; an index is unnecessary at four items.
 
-**License:** MIT. Closest structural cousin is aiBreze (MIT): a rule set you point an agent at. ForgeTrail and IngotVault stay Apache 2.0; that patent grant matters more for engines and git tooling than for Markdown skills.
+**License:** MIT. Closest structural cousin is Smell Check (MIT): a rule set you point an agent at. ForgeTrail and IngotVault stay Apache 2.0; that patent grant matters more for engines and git tooling than for Markdown skills.
 
 ---
 

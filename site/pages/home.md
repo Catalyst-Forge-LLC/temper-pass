@@ -57,6 +57,6 @@ TemperPass is one hour of a Saturday morning, after [an X post by Vox](https://x
 
 ## On the Catalyst Forge shelf
 
-Lives next to ForgeTrail and aiBreze. Closest cousin is aiBreze: a rule set you point an agent at.
+Lives next to ForgeTrail and Smell Check. Closest cousin is Smell Check: a rule set you point an agent at.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.
