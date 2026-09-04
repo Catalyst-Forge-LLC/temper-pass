@@ -52,4 +52,4 @@ Curated stack label for this repository — aimed at an under-a-minute skim.
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Scan `APP_FACTS.png` or open the [visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpVkM1qwzAQhF_FzFmJ6VXXQKEl7cW5hVI28lZRI0uLtHYxwe9e7PTS2_58zOzOHRPsk0GigWGhPAgXoVphoLOssyrsmrbRnGNIHgZVSccKC3IaJoZBDI5TXeG3l9ODcDfYOyIlP5JfN6dZuHMliJrmlSZ61DAoY9Kwub_nnvffdROYNzOLQ9fB4Jqr_vUxj_1XpMJYDHqWCnu-I8Hip1DykQsM5B_Z9CwxzwMn3d7A8mFwGUPs1xuF3I08fw6UyHOBhSQZVvXCkmvQXGZYXFWl2rb1Qa_jZe_y0B5IKc5Vd8-5eN4dj4f2EeBuS3D5BTp8dpc
+[appfacts-label]: https://appfacts.dev/v#af1.eNpVkMtOxDAMRX-l8roPse22EhJoYNPZjRDKtKYN5GElTlE16r_jtCMBq8TXJ9c3vsEC7UMJTlmEFhgtYSAVI5TAK2UtEg5FU7D3RrtJ9MiKU5SOGlgvKIrRA7qY4Zen80EMX9DewCg3JTXlzlnc-iFo4rJ4Vos67gKH5Fjv01_9iPVn3A3WfVgLXd9LPfvI99r4NH4YFRC2EkYkCXK5gZPWd5BpBoPw9I8sBDN-teh4_wZsbyVckzZjzkiSVSK-W-XkCPKSHNnsPnuLdKSfmSm2TfO7oHrEJadH8lGzD-sfatI8p2s9eNt0ipVZI1ePPkxYnU7d3aPat7z9ALudg0c
