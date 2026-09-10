@@ -11,8 +11,8 @@ export default defineFilepressConfig({
 	url: 'https://temperpass.dev',
 	author: 'Catalyst Forge LLC',
 	homePage: 'home',
-	logo: '/logo.svg',
-	ogImage: '/logo.svg',
+	logo: '/logo.png',
+	ogImage: '/logo.png',
 	nav: [
 		{ label: 'Home', href: '/' },
 		{ label: 'Passes', href: '/passes' },
