@@ -12,13 +12,13 @@ A user who types `red-team` has consented to being disagreed with. Nobody consen
 
 Names the load-bearing assumptions, says what missing fact would change the answer, then answers anyway. Closes with one question, two at most. It fires only when a request is underspecified **and** a wrong first attempt is expensive; a factual question or a cheap fix stays uninterrupted.
 
-**Status:** validated in-session, negative cases first. Independent run still owed.
+**Status:** same-session check, negative cases first. Independent run still owed. Not a deterministic fire. The host must load and match the skill.
 
 ## [red-team](/red-team) (called)
 
 Builds the strongest reasonable form of the current direction, then attacks that version. Rates objections on severity — <span class="temper-straw">Fatal</span>, <span class="temper-purple">Costly</span>, <span class="temper-blue">Survivable</span> — and plausibility, and is allowed to come back clean.
 
-**Status:** locked against prompts it was allowed to fail.
+**Status:** protocol locked against prompts it was allowed to fail. Same-session transcripts, not an independent eval.
 
 ## [scope-lock](/scope-lock) (called)
 

@@ -46,7 +46,7 @@ The folder you drop in keeps the pass name and must contain `SKILL.md`.
 | Pass | Path | When |
 | --- | --- | --- |
 | [red-team](/red-team) | `passes/red-team/` | You type **red-team this**. Locked. |
-| [clarify-first](/clarify-first) | `passes/clarify-first/` | Auto. Validated (same-session). |
+| [clarify-first](/clarify-first) | `passes/clarify-first/` | Auto if the host matches the skill. Same-session check. |
 | [scope-lock](/scope-lock) | `passes/scope-lock/` | You ask to lock scope. Locked. |
 | [tradeoff-matrix](/tradeoff-matrix) | `passes/tradeoff-matrix/` | You ask for a scored comparison. Locked. |
 
@@ -58,7 +58,7 @@ Called passes do not fire on their own. Say the name.
 - Scope-lock this.
 - Tradeoff-matrix this.
 
-clarify-first runs on its own when a request is underspecified and a wrong first attempt is expensive. It does not fire on a cheap fix or a factual question.
+clarify-first is instructed to run when a request is underspecified and a wrong first attempt is expensive. It is instructed to stay silent on a cheap fix or a factual question. That fire depends on the host loading the folder and matching the skill description. It is not a property of placing a folder anywhere.
 
 ## Why the descriptions are narrow
 

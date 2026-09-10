@@ -2,40 +2,36 @@
 
 Tempered judgment your agent can install.
 
-Most agents answer immediately and confidently. TemperPass makes them say what they're assuming first.
-
-Expert skills for Cursor, Claude Code, and anything else that reads a `SKILL.md` file. These are the checks a careful person already runs, written as a numbered protocol an agent can follow. `pnpm add temperpass`, copy one folder into the skills directory, and it runs over the agent's thinking on the way to the answer.
+Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. These are numbered instructions an agent is told to follow. The host and the model decide whether they are followed.
 
 Written **TemperPass**. A temper mill, not a mood.
 
-## The right question
+## What changes for you
 
-Answering the wrong question well costs more than answering the right question slowly — but only when the work is hard to undo.
+**Request.** Move production Postgres next week. The pass is instructed to name the load-bearing assumption, answer under it, and close with one question.
 
-Agents skip that second half. They pick a reading of the request and commit to it. [`clarify-first`](passes/clarify-first/SKILL.md) names the load-bearing assumptions (at most three), says what missing fact would change the answer, then answers anyway, and closes with one question. A second is allowed only when it is independent of the first and would change the recommendation on its own. Never three.
+**Request.** Add a blank line in the README. The pass is instructed to stay silent. A wrong first attempt is cheap.
 
-The default does not block, because halt-and-ask is one of the loudest complaints about agents and it is infuriating when it fires on something cheap. Waiting is reserved for work you cannot undo: send, delete, spend, write to production, commit the user publicly. Ambiguity alone is not a reason to block. Ambiguity plus irreversibility is.
+Waiting is reserved for work you cannot undo: send, delete, spend, write to production, commit the user publicly. Ambiguity alone is not a reason to block. Ambiguity plus irreversibility is.
 
-That is the only auto pass. It fires when a request is underspecified *and* a wrong first attempt is expensive. A flake test, a typo, a factual question: it stays silent, and it does not announce the skip.
+## Four passes. Three you call. One the host may match.
 
-## Four passes. Three you call. One that calls itself.
-
-Everything is a **pass**. The only distinction is who calls it.
+Everything is a **pass**. The only distinction is who is supposed to call it.
 
 A user who types `red-team` has consented to being disagreed with. Nobody consents to that by asking a question. Anything confrontational, slow, or artifact-producing is a called pass.
 
-The auto pass fires on description match, without being asked. Because the model decides, and because it interrupts the actual request, the bar is high: only behavior that is safe to apply unrequested qualifies. Exactly one pass currently clears it.
+`clarify-first` is the only auto pass. Auto means the host loaded the skill folder and matched its description. Cursor and Claude Code do that for installed `SKILL.md` files. Dropping a folder where the host does not scan skills does nothing. The model still decides whether a match fires.
 
 | Pass | Type | Status | Does |
 | --- | --- | --- | --- |
-| [`clarify-first`](passes/clarify-first/SKILL.md) | Auto | **Validated** (same-session) | Names load-bearing assumptions and decision-changing gaps, then answers under them |
-| [`red-team`](passes/red-team/SKILL.md) | Called | **Locked** | Attacks the direction on its strongest form; absorbs premortem and steelman |
-| [`scope-lock`](passes/scope-lock/SKILL.md) | Called | **Locked** | Freezes boundaries, success criteria, and explicit non-goals |
-| [`tradeoff-matrix`](passes/tradeoff-matrix/SKILL.md) | Called | **Locked** | Forces explicit criteria, weights, and scoring across genuinely different options |
+| [`clarify-first`](passes/clarify-first/SKILL.md) | Auto, if the host matches | **Same-session check** | Names load-bearing assumptions and decision-changing gaps, then answers under them |
+| [`red-team`](passes/red-team/SKILL.md) | Called | **Protocol locked** | Attacks the direction on its strongest form; absorbs premortem and steelman |
+| [`scope-lock`](passes/scope-lock/SKILL.md) | Called | **Protocol locked** | Freezes boundaries, success criteria, and explicit non-goals |
+| [`tradeoff-matrix`](passes/tradeoff-matrix/SKILL.md) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across genuinely different options |
 
-Four is the whole set. The first draft had nine, and half of them (premortem, steelman, first-principles) were behavior a competent model already produces when you ask for it. The protocol is the part you install.
+**Same-session check** is a sanity check in the session that wrote the protocol, not an independent eval. **Protocol locked** means the numbered steps are stable after those runs. Neither label is a performance proof.
 
-**Parked, not cancelled:** `first-principles`, `option-generator`, `premortem`, `steelman`, `confidence-calibrate`. Each returns only when it has a protocol that beats "just ask the model to do this."
+Evals and transcripts: [`evals/`](evals/) and [`examples/`](examples/). Host and model are not named on every prompt. An independent run is still owed for `clarify-first`.
 
 ## Install
 
@@ -63,7 +59,7 @@ Standard skill-authoring advice says to make descriptions *pushy*, because model
 
 Do not "fix" this later by broadening the descriptions. This is the design.
 
-**Guidelines don't bind. Steps do.** A load-bearing rule that sat in `red-team`'s guidelines was ignored in a live run. The same rule as a numbered step, with a test the model can apply, held. Guidelines are for taste. Constraints go in the protocol.
+Numbered steps are easier for an agent to follow than loose guidelines. A load-bearing rule that sat in `red-team`'s guidelines was ignored in a live run. The same rule as a numbered step, with a test the model can apply, held. That is an observed example, not enforcement.
 
 Passes that have never been run against real prompts are guesses. `red-team` needed two protocol changes that only showed up under test. Run each prompt with and without the pass. The baseline tells you whether the failure was the pass or the model's default. Record the failures in `examples/`. A same-session run is a sanity check, not an eval.
 
@@ -90,6 +86,12 @@ Plausibility (Likely / Possible / Unlikely) stays textual. Straw is the brittle 
 A temper pass is a real steel-mill operation. A temper mill runs finished strip through a very light cold-rolling pass — typically only 1.5–2% thickness reduction, far less than ordinary cold rolling. It isn't there to reshape the steel. It's there to set the mechanical properties, control surface roughness, and improve flatness. The shape goes in and the shape comes out; what changes is that the material stops being brittle.
 
 The passes don't withhold your answer or reroute your work. They take out the brittleness — the unstated assumption, the undefended scope, the objection nobody voiced — and hand back the same shape, harder to snap. A light pass before the answer.
+
+## Design notes
+
+An earlier draft had nine passes. Five of them were behavior a competent model already produces when you ask for it. The protocol is the part you install.
+
+**Parked, not cancelled:** `first-principles`, `option-generator`, `premortem`, `steelman`, `confidence-calibrate`. Each returns only when it has a protocol that beats asking the model to do the same thing.
 
 ## Where it started
 

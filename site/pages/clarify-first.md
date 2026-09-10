@@ -4,9 +4,9 @@ description: Name the load-bearing assumptions, then answer anyway. The only aut
 order: 3
 ---
 
-An auto pass. It may fire without being asked. That is why the description is narrow.
+An auto pass, if the host loaded the skill and matched its description. It may fire without being asked. That is why the description is narrow. The protocol instructs the agent. It does not enforce the fire.
 
-**Status:** Validated in-session (negative cases first). Independent run still owed.
+**Status:** Same-session check (negative cases first). Independent run still owed.
 
 This pass started as [the X post that started the project](https://x.com/Voxyz_ai/status/2088327172725592142). The tweet has the model wait every time. This pass answers under the assumptions and waits only when the next action is hard to undo. [A prompt with coffee](/posts/a-prompt-with-coffee).
 
