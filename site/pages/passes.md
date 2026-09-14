@@ -36,4 +36,4 @@ Forces explicit criteria, weights, and scores across genuinely different options
 
 `first-principles`, `option-generator`, `premortem`, `steelman`, `confidence-calibrate`. Each stays parked until it has a protocol that beats asking the model to do the same thing in a sentence.
 
-[Install](/install)
+[Install in your agent](/install)

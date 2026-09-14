@@ -26,4 +26,4 @@ If the options are not actually different, or there is no success condition, do 
 
 A first run scored Railway vs Fly vs Render Postgres. They collapse. Transcripts: [`examples/tradeoff-matrix-transcripts.md`](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/examples/tradeoff-matrix-transcripts.md).
 
-[Install](/install)
+[Install in your agent](/install)

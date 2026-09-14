@@ -30,4 +30,4 @@ Ambiguity alone is not a reason to block. Ambiguity plus irreversibility is.
 
 Two steps here started as preferences and had to become tests. The first validation run fired on "the tests are flaky" — underspecified, but cheap to get wrong — which is why the gate is step 0. A later run on a billing migration had two gaps that were both load-bearing, and a hard cap of one question bought compliance in the worst way: the two got joined with "and" into a single sentence that was harder to answer than either. Transcripts: [`examples/clarify-first-transcripts.md`](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/examples/clarify-first-transcripts.md).
 
-[Install](/install)
+[Install in your agent](/install)

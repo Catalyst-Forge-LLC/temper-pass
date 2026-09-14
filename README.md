@@ -33,25 +33,47 @@ A user who types `red-team` has consented to being disagreed with. Nobody consen
 
 Evals and transcripts: [`evals/`](evals/) and [`examples/`](examples/). Host and model are not named on every prompt. An independent run is still owed for `clarify-first`.
 
-## Install
+## Get started
 
-Get one pass folder from a ZIP, a clone, or npm, then put it in a skills directory. Dest dirs and downloads: [temperpass.dev/install](https://temperpass.dev/install).
+Choose a pass, pick the agent, install that folder, then run a named
+example — [temperpass.dev/install](https://temperpass.dev/install).
+
+- [Cursor](https://temperpass.dev/install#cursor)
+- [Claude Code](https://temperpass.dev/install#claude-code)
+- [Claude.ai](https://temperpass.dev/install#claudeai)
+
+For `clarify-first`, ask:
+
+> Follow the installed clarify-first pass. Move production Postgres
+> next week.
+
+For a called pass, say the name: **red-team this**, **scope-lock this**.
+It will not fire on its own.
+
+Site: [temperpass.dev](https://temperpass.dev)
+
+## Other installation methods
+
+npm supplies the pass folders. It does not register a pass with the
+agent.
 
 ```bash
 pnpm add temperpass
 ```
 
-Copy one folder from `node_modules/temperpass/passes/` into your agent's skill directory.
+Copy one folder from `node_modules/temperpass/passes/` into the same
+destination the [Get started](https://temperpass.dev/install) page
+names for your agent.
+
+Updating the npm dependency does not refresh a folder you already
+copied. Copy again after you bump the package.
 
 ```bash
 git clone https://github.com/Catalyst-Forge-LLC/temper-pass.git
 ```
 
-Then copy `passes/clarify-first/` or `passes/red-team/` (or another pass) into a skills directory.
-
-For a called pass, say the name: **red-team this**, **scope-lock this**. It will not fire on its own.
-
-Site: [temperpass.dev](https://temperpass.dev)
+Then copy `passes/clarify-first/` or `passes/red-team/` (or another pass)
+into the same destination.
 
 ## How they're written
 

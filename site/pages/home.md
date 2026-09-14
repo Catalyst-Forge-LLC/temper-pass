@@ -4,7 +4,7 @@ description: Give your agent a protocol for naming consequential assumptions, ch
 order: 0
 ---
 
-Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. Use the pass that fits the task, with clarification reserved for uncertainty that materially affects the work.
+An installable set of passes for AI agents. Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. Use the pass that fits the task, with clarification reserved for uncertainty that materially affects the work.
 
 These are numbered protocols an agent is instructed to follow. Observable outputs are stated assumptions, a pause before hard-to-undo work, a red-team that can come back clean, or a tradeoff table. The host and the model decide whether the protocol is followed. The text does not override host permissions, and it does not read private model reasoning.
 
@@ -35,7 +35,7 @@ Everything is a **pass**. The only distinction is who is supposed to call it.
 
 Auto means the host loaded the skill folder and matched its description. Dropping a folder where the host does not scan skills does nothing. Cursor and Claude Code match installed `SKILL.md` descriptions. They do not guarantee a fire on every underspecified request.
 
-[All four passes](/passes) · [Install](/install) · [GitHub](https://github.com/Catalyst-Forge-LLC/temper-pass)
+[Install in your agent](/install) · [All four passes](/passes) · [GitHub](https://github.com/Catalyst-Forge-LLC/temper-pass)
 
 ## How they're written
 

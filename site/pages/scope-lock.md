@@ -26,4 +26,4 @@ If the input is too soft, do not produce a full-dress contract of nothing.
 
 A first run on "scope-lock hiring a senior engineer" invented a contract. Step 1 now forbids new nouns. Transcripts: [`examples/scope-lock-transcripts.md`](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/examples/scope-lock-transcripts.md).
 
-[Install](/install)
+[Install in your agent](/install)

@@ -40,4 +40,4 @@ The steeled version held. The strongest objection — cross-service consistency 
 
 That clean close is part of the design. Full transcripts, including the two failures that forced protocol changes, are in [`examples/red-team-transcripts.md`](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/examples/red-team-transcripts.md).
 
-[Install](/install)
+[Install in your agent](/install)
