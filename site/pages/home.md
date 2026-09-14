@@ -35,7 +35,7 @@ Everything is a **pass**. The only distinction is who is supposed to call it.
 
 Auto means the host loaded the skill folder and matched its description. Dropping a folder where the host does not scan skills does nothing. Cursor and Claude Code match installed `SKILL.md` descriptions. They do not guarantee a fire on every underspecified request.
 
-[Install in your agent](/install) · [All four passes](/passes) · [GitHub](https://github.com/Catalyst-Forge-LLC/temper-pass)
+[Install in your agent](/install) · [All four passes](/passes) · [Posts](/posts) · [GitHub](https://github.com/Catalyst-Forge-LLC/temper-pass)
 
 ## How they're written
 
