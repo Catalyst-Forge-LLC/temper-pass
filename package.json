@@ -48,6 +48,15 @@
 	},
 	"packageManager": "pnpm@10.30.1",
 	"pnpm": {
-		"onlyBuiltDependencies": ["esbuild", "getfilepress", "workerd"]
+		"overrides": {
+			"sharp": "0.35.4",
+			"cookie@<0.7.0": "0.7.2",
+			"js-yaml": "3.15.2"
+		},
+		"onlyBuiltDependencies": [
+			"esbuild",
+			"getfilepress",
+			"workerd"
+		]
 	}
 }
