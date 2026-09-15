@@ -128,9 +128,9 @@ Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/
 
 Lives next to ForgeTrail and Smell Check. Closest cousin is Smell Check: a rule set you point an agent at.
 
-<!-- xfacts-nutrition-label -->
+<!-- xfacts-label -->
 
-## Nutrition label
+## xFacts label
 
 - **AppFacts:** [viewer](https://appfacts.dev/v#af1.eNpVkM1qwzAQhF_FzFmJ6VXXQKEl7cW5hVI28lZRI0uLtHYxwe9e7PTS2_58zOzOHRPsk0GigWGhPAgXoVphoLOssyrsmrbRnGNIHgZVSccKC3IaJoZBDI5TXeG3l9ODcDfYOyIlP5JfN6dZuHMliJrmlSZ61DAoY9Kwub_nnvffdROYNzOLQ9fB4Jqr_vUxj_1XpMJYDHqWCnu-I8Hip1DykQsM5B_Z9CwxzwMn3d7A8mFwGUPs1xuF3I08fw6UyHOBhSQZVvXCkmvQXGZYXFWl2rb1Qa_jZe_y0B5IKc5Vd8-5eN4dj4f2EeBuS3D5BTp8dpc) · [raw](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/APP_FACTS.md)
 - **SkillFacts:**
