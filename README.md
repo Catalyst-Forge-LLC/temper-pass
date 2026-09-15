@@ -8,7 +8,7 @@ Written **TemperPass**. A temper mill, not a mood.
 
 ## What changes for you
 
-**Request.** Move production Postgres next week. The pass is instructed to name the load-bearing assumption, answer under it, and close with one question.
+**Request.** This is a fictional planning exercise. Make no changes. Advise on moving production Postgres next week for desk-stamp, an invented product. The pass is instructed to name the load-bearing assumption, answer under it, and close with one question.
 
 **Request.** Add a blank line in the README. The pass is instructed to stay silent. A wrong first attempt is cheap.
 
@@ -44,8 +44,13 @@ example — [temperpass.dev/install](https://temperpass.dev/install).
 
 For `clarify-first`, ask:
 
-> Follow the installed clarify-first pass. Move production Postgres
-> next week.
+> Follow the installed clarify-first pass. This is a fictional planning
+> exercise. Make no changes. Advise on moving production Postgres next
+> week for desk-stamp, an invented product.
+
+For `tradeoff-matrix`, supply **three** meaningfully different options
+and a decision criterion. Two options correctly produce a request for
+more input.
 
 For a called pass, say the name: **red-team this**, **scope-lock this**.
 It will not fire on its own.

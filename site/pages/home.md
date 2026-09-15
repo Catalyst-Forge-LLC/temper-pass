@@ -10,7 +10,7 @@ These are numbered protocols an agent is instructed to follow. Observable output
 
 ## What changes for you
 
-**Request.** Move production Postgres next week.
+**Request.** This is a fictional planning exercise. Make no changes. Advise on moving production Postgres next week for desk-stamp, an invented product.
 
 **Assumption the pass is instructed to name.** The current database is a single-region instance, and a wrong first cut would mean a production rewrite.
 
