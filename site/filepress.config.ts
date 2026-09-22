@@ -5,7 +5,7 @@ const github = 'https://github.com/Catalyst-Forge-LLC/temper-pass';
 export default defineFilepressConfig({
 	title: 'TemperPass',
 	description:
-		'Most agents answer immediately and confidently. TemperPass makes them say what they\'re assuming first.',
+		'Most agents answer immediately and confidently. TemperPass instructs them to say what they\'re assuming first.',
 	tagline: 'Tempered judgment for AI agents.',
 	lede: 'For Cursor, Claude Code, and anything else that reads a SKILL.md file.',
 	url: 'https://temperpass.dev',

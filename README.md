@@ -12,7 +12,7 @@ Written **TemperPass**. A temper mill, not a mood.
 
 **Request.** Add a blank line in the README. The pass is instructed to stay silent. A wrong first attempt is cheap.
 
-Waiting is reserved for work you cannot undo: send, delete, spend, write to production, commit the user publicly. Ambiguity alone is not a reason to block. Ambiguity plus irreversibility is.
+The pass tells the agent to ask first only before work you cannot undo: send, delete, spend, write to production, commit the user publicly. Ambiguity alone is not a reason to ask. Ambiguity plus irreversibility is. This is an instruction the model may still skip, not a permission check. For a hard stop, use a host hook or permission setting.
 
 ## Four passes. Three you call. One the host may match.
 
@@ -27,7 +27,7 @@ A user who types `red-team` has consented to being disagreed with. Nobody consen
 | [`clarify-first`](passes/clarify-first/SKILL.md) | Auto, if the host matches | **Same-session check** | Names load-bearing assumptions and decision-changing gaps, then answers under them |
 | [`red-team`](passes/red-team/SKILL.md) | Called | **Protocol locked** | Attacks the direction on its strongest form; absorbs premortem and steelman |
 | [`scope-lock`](passes/scope-lock/SKILL.md) | Called | **Protocol locked** | Freezes boundaries, success criteria, and explicit non-goals |
-| [`tradeoff-matrix`](passes/tradeoff-matrix/SKILL.md) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across genuinely different options |
+| [`tradeoff-matrix`](passes/tradeoff-matrix/SKILL.md) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across meaningfully different options |
 
 **Same-session check** is a sanity check in the session that wrote the protocol, not an independent eval. **Protocol locked** means the numbered steps are stable after those runs. Neither label is a performance proof.
 
@@ -36,7 +36,7 @@ Evals and transcripts: [`evals/`](evals/) and [`examples/`](examples/). Host and
 ## Get started
 
 Choose a pass, pick the agent, install that folder, then run a named
-example — [temperpass.dev/install](https://temperpass.dev/install).
+example: [temperpass.dev/install](https://temperpass.dev/install).
 
 - [Cursor](https://temperpass.dev/install#cursor)
 - [Claude Code](https://temperpass.dev/install#claude-code)
@@ -98,21 +98,21 @@ Three `red-team` decisions that stay:
 
 ## Severity colors
 
-Tempering steel produces a color sequence as temperature rises — straw, bronze, purple, blue. TemperPass uses that scale for **severity only**:
+Tempering steel produces a color sequence as temperature rises: straw, bronze, purple, blue. TemperPass uses that scale for **severity only**:
 
 | Rating | Color | Metal |
 | --- | --- | --- |
-| **Fatal** | temper straw | The hard, brittle temper — what snaps |
+| **Fatal** | temper straw | The hard, brittle temper: what snaps |
 | **Costly** | temper purple | Middle of the range |
-| **Survivable** | temper blue | The tough spring temper — what bends and holds |
+| **Survivable** | temper blue | The tough spring temper: what bends and holds |
 
 Plausibility (Likely / Possible / Unlikely) stays textual. Straw is the brittle temper and blue is the tough one, so brittle-equals-fatal is the direction that matches the metal. An earlier draft ran it the other way, on the intuition that hotter is worse. The metal disagrees.
 
 ## Why the name
 
-A temper pass is a real steel-mill operation. A temper mill runs finished strip through a very light cold-rolling pass — typically only 1.5–2% thickness reduction, far less than ordinary cold rolling. It isn't there to reshape the steel. It's there to set the mechanical properties, control surface roughness, and improve flatness. The shape goes in and the shape comes out; what changes is that the material stops being brittle.
+A temper pass is a real steel-mill operation. A temper mill runs finished strip through a very light cold-rolling pass, typically only 1.5–2% thickness reduction, far less than ordinary cold rolling. It isn't there to reshape the steel. It's there to set the mechanical properties, control surface roughness, and improve flatness. The shape goes in and the shape comes out; what changes is that the material stops being brittle.
 
-The passes don't withhold your answer or reroute your work. They take out the brittleness — the unstated assumption, the undefended scope, the objection nobody voiced — and hand back the same shape, harder to snap. A light pass before the answer.
+The passes don't withhold your answer or reroute your work. They take out the brittleness (the unstated assumption, the undefended scope, the objection nobody voiced) and hand back the same shape, harder to snap. A light pass before the answer.
 
 ## Design notes
 
@@ -122,7 +122,7 @@ An earlier draft had nine passes. Five of them were behavior a competent model a
 
 ## Where it started
 
-Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/status/2088327172725592142) posted a reasoning prompt: list the assumptions, name the missing fact, ask one question, wait. The next hour is this repo. In the tweet the model always waits; `clarify-first` answers under the assumptions and waits only when the next action is hard to undo. The write-up is on the site: [A prompt with coffee](https://temperpass.dev/posts/a-prompt-with-coffee).
+Saturday morning coffee, scrolling X. [Vox, 14 Aug 2026](https://x.com/Voxyz_ai/status/2088327172725592142) posted a reasoning prompt: list the assumptions, name the missing fact, ask one question, wait. The next hour is this repo. In the tweet the model always waits. `clarify-first` tells the agent to answer under the assumptions and ask first only when the next action is hard to undo. The write-up is on the site: [A prompt with coffee](https://temperpass.dev/posts/a-prompt-with-coffee).
 
 ## On the Catalyst Forge shelf
 

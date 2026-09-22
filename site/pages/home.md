@@ -6,7 +6,7 @@ order: 0
 
 An installable set of passes for AI agents. Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. Use the pass that fits the task, with clarification reserved for uncertainty that materially affects the work.
 
-These are numbered protocols an agent is instructed to follow. Observable outputs are stated assumptions, a pause before hard-to-undo work, a red-team that can come back clean, or a tradeoff table. The host and the model decide whether the protocol is followed. The text does not override host permissions, and it does not read private model reasoning.
+These are numbered protocols an agent is instructed to follow. Observable outputs are stated assumptions, a question before hard-to-undo work, a red-team that can come back clean, or a tradeoff table. The host and the model decide whether the protocol is followed. The text is not a permission check: it does not override host permissions, block a command, or read private model reasoning. For a hard stop, use a host hook.
 
 ## What changes for you
 
@@ -29,7 +29,7 @@ Everything is a **pass**. The only distinction is who is supposed to call it.
 | [clarify-first](/clarify-first) | Auto, if the host matches the skill | **Same-session check** | Names load-bearing assumptions, then answers under them |
 | [red-team](/red-team) | Called | **Protocol locked** | Attacks the direction on its strongest form |
 | [scope-lock](/scope-lock) | Called | **Protocol locked** | Freezes boundaries, success criteria, and explicit non-goals |
-| [tradeoff-matrix](/tradeoff-matrix) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across genuinely different options |
+| [tradeoff-matrix](/tradeoff-matrix) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across meaningfully different options |
 
 **Same-session check** means the protocol was tightened against prompts in the same session that wrote it. That is a sanity check, not an independent eval. **Protocol locked** means the numbered steps are stable after those runs. Neither label is a performance proof.
 
@@ -70,7 +70,7 @@ An earlier draft had nine passes. Five of them were behavior a competent model a
 
 **Parked, not cancelled:** `first-principles`, `option-generator`, `premortem`, `steelman`, `confidence-calibrate`. Each returns only when it has a protocol that beats asking the model to do the same thing.
 
-TemperPass started as one Saturday morning after [an X post by Vox](https://x.com/Voxyz_ai/status/2088327172725592142) about making a model list its assumptions and ask a single question before it answers. `clarify-first` still names the assumptions, then answers, and waits only when the next action is hard to undo. The write-up is [A prompt with coffee](/posts/a-prompt-with-coffee).
+TemperPass started as one Saturday morning after [an X post by Vox](https://x.com/Voxyz_ai/status/2088327172725592142) about making a model list its assumptions and ask a single question before it answers. `clarify-first` still tells the agent to name the assumptions, then answer, and to ask first only when the next action is hard to undo. The write-up is [A prompt with coffee](/posts/a-prompt-with-coffee).
 
 ## On the Catalyst Forge shelf
 
