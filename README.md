@@ -143,3 +143,5 @@ Lives next to ForgeTrail and Smell Check. Closest cousin is Smell Check: a rule 
 ## License
 
 MIT. Built by [Catalyst Forge LLC](https://www.catalystforge.com).
+
+[See the rest of the Catalyst Forge shelf.](https://catalystforge.com/tools/)
