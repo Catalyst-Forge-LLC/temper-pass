@@ -4,7 +4,7 @@ description: Four passes. Three you call. One that calls itself. What each one d
 order: 2
 ---
 
-Everything in TemperPass is a **pass**: a short protocol that runs over the agent's thinking before it commits. The only distinction is who calls it.
+Everything in TemperPass is a **pass**: numbered instructions an agent is told to follow before it commits. The host and the model decide whether they are followed. The only distinction is who calls it.
 
 A user who types `red-team` has consented to being disagreed with. Nobody consents to that by asking a question. So anything confrontational, slow, or artifact-producing waits to be called, and exactly one pass is allowed to fire on its own.
 
@@ -24,13 +24,13 @@ Builds the strongest reasonable form of the current direction, then attacks that
 
 Freezes boundaries, success criteria, and explicit non-goals before work starts, in your own nouns. It does not invent deliverables on the way.
 
-**Status:** locked. The first run invented HR process nouns for "hire a senior engineer"; the protocol now forbids new nouns.
+**Status:** Protocol locked. Same-session check. The first run invented HR process nouns for "hire a senior engineer"; the protocol now forbids new nouns. Not an independent eval.
 
 ## [tradeoff-matrix](/tradeoff-matrix) (called)
 
 Forces explicit criteria, weights, and scores across genuinely different options. Variants of one option collapse into it before anything gets scored.
 
-**Status:** locked. The first run scored three hosting providers as if they were three architectures.
+**Status:** Protocol locked. Same-session check. The first run scored three hosting providers as if they were three architectures. Not an independent eval.
 
 ## Parked, not cancelled
 

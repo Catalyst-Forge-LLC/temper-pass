@@ -6,7 +6,7 @@ order: 4
 
 A called pass. Only run it when you have asked for it.
 
-**Status:** Locked. Same-session validation, including a run that failed by inventing nouns.
+**Status:** Protocol locked. Same-session check, including a run that failed by inventing nouns. Not an independent eval.
 
 A scope lock is a short written contract. The value concentrates in the non-goals list: the part people skip, and the part that prevents drift.
 

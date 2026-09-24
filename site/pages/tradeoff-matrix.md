@@ -6,7 +6,7 @@ order: 5
 
 A called pass. Only run it when you have asked for it.
 
-**Status:** Locked. Same-session validation, including a run that scored three hosts of the same database as if they were architectures.
+**Status:** Protocol locked. Same-session check, including a run that scored three hosts of the same database as if they were architectures. Not an independent eval.
 
 A decision that cannot name its criteria will back-fit them after the favorite wins. This pass makes the criteria and the weights visible first.
 
