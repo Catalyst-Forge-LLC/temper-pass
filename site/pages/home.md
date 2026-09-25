@@ -8,6 +8,11 @@ An installable set of passes for AI agents. Give your agent a protocol for namin
 
 These are numbered protocols an agent is instructed to follow. Observable outputs are stated assumptions, a question before hard-to-undo work, a red-team that can come back clean, or a tradeoff table. The host and the model decide whether the protocol is followed. The text is not a permission check: it does not override host permissions, block a command, or read private model reasoning. For a hard stop, use a host hook.
 
+<div class="cta-row">
+  <a class="cta cta-primary" href="/install">Install in your agent</a>
+  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/temper-pass">View on GitHub</a>
+</div>
+
 ## What changes for you
 
 **Request.** This is a fictional planning exercise. Make no changes. Advise on moving production Postgres next week for desk-stamp, an invented product.

@@ -7,7 +7,7 @@ export default defineFilepressConfig({
 	description:
 		'Most agents answer immediately and confidently. TemperPass instructs them to say what they\'re assuming first.',
 	tagline: 'Tempered judgment for AI agents.',
-	lede: 'For Cursor, Claude Code, and anything else that reads a SKILL.md file.',
+	lede: 'Assumptions · scope · tradeoffs',
 	url: 'https://temperpass.dev',
 	author: 'Catalyst Forge LLC',
 	homePage: 'home',
