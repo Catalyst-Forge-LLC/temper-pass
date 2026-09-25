@@ -1,5 +1,5 @@
 ---
-title: Tempered judgment your agent can install.
+title: Help your agent surface consequential assumptions before hard-to-undo work.
 description: Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs.
 order: 0
 ---
