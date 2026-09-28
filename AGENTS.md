@@ -10,7 +10,6 @@ This repo uses **ForgeTrail** lifecycle tracking. Source of truth: `.forgetrail/
 ## Git commits
 
 - Plain `git commit -m "..."` or `git commit -F <file>`.
-- **No unrequested attribution trailers** (e.g. no "Co-Authored-By" or tool-attribution lines) unless the user explicitly asks for them.
 - Commit after substantive work per `.cursor/rules/git-user-commits.mdc`. Do not push unless the user explicitly asks.
 
 ## Phase transitions
