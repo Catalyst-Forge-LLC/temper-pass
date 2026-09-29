@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: tradeoff-matrix
+name: Tradeoff Matrix
 developer: Catalyst Forge
 version: "0.1.0"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - tradeoff-matrix
+# Skill Facts - Tradeoff Matrix
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Force an explicit tradeoff matrix when choosing among mutually exclusive options
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUU1rwzAM_SvG56Yf114Hg0F3222MojpKYmpbQZKzldL_PiWlbIeddjH2k_T03vPVT36_W_kCGf3eK0OL1HVNBuX45Ve-xQkTjchWfQKFdBF1z8Q9WnFClkjFStv1br01RBS0igEQNE5zT4oBi8zkry9v9j7H0tojVBbiRs4xJUPHyiMtXcYd0EFx-DXabFT3EOXuotzngMWFgUhi6R1ksjNXrZDSxaZCqmKrHY1q2mQmZ5qwQAnGf_VCleebH1RH2W82fdShntaB8ubhsFkcNofD00Yxm_tmBFmo6ilFGf6K47bysYhyDcveIyOEYVk4oHnc-0JlDqSgfhKff4AuJhTjwfzAjEqJ0szRIaMJt8jeP1b-VEubsD0Ca-wsYrnD2DOaPNulmDCj8uWHvkXRWOAehrUb-UAZR-h_h3C3Obtc25fbGKN9SFRaqP4TlSVRAugs3a54-wbeJ9ml
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkM1qKzEMhV_FaO0k7dbbQuFCu-uulOJ4NDMmHslI8jSh5N2LJ4TexV3dnTiI7_x8wwrh0QPFBSHAm8QBeRzdazTJZ_Aw4IqFKwoEeIoWy0XNPbNMCB5WFM1MEOBh_7h_AA9q0ZpCgJgsr_2n5ISkHf765w08nDINECA1UZadnnIp4KE2qbx9PbMkdJEcnmvJKZuze6hlC-W-ZiSXZmbNNLm4ME1uadZiKReH51Sa5hUdV8tM2uHCK1KkhBC-QblJv2A2qxoOhynb3I77xMvh3nC3Ndy9vDwdDJeKsqtRN1Q7lqzzv-a4esikJi1tvp-CMc2b4YylQABi6oMQ2hfL6VcYc0G9qOFy164ejLl0xoiClHCA8P7h4dhoKDh8RrE8xmR6k3ESVO1ehgUXNLn84gdUyxRvY4T3j6uHmRescfp7hFvN3nI_4AoeBCtrNt5Q_zOVSaMUrUc3aXj9ASoD2Vg

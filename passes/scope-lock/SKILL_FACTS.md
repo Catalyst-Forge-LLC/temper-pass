@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: scope-lock
+name: Scope Lock
 developer: Catalyst Forge
 version: "0.1.0"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - scope-lock
+# Skill Facts - Scope Lock
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Lock the in-scope and out-of-scope boundary for a piece of work before expanding
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUTFuwzAM_IqgOU6aNWuAAgXSrVtRBLJM20Jk0iBpt0GQv5dyGqRDp27ikTreHS9-9rvtymMYwO-8RBqhyhRPfuUbmCFbzdbYBw35LOqeiTuw5gwsidBaT-vt-skQ0aCTGBCiprnM5BQBpfC-vrxZfUrYWBEnFuJKTilnQ8eJR1qmDrbXaQ8uYbUocQEbR5NW1P4ANU3YBD67ltgFNyaI4Kh1n8QnV4Oh4OBrtH8JO5e08DPNgAGjrbh4oYnLy_eqo-w2my5pP9XrSMPmbrJaTFaHw36jMFgA1RhEFql1TtL_lch15ROK8mTmCeXIEGK_LOzBbO48EpZMELRofQBtyiDGA8MdMyolyoWjBQYTbqm9f6x8bd4zNMfAmlpLWW4wdAwmz3YpZBhA-fygb0A0YVhElXEj72mAMXS_Q7jZLC7XdnX7xmA3SUoL1X-isiQwBi3S7QnXb3D81t0
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkEFrHDEMhf-K0dmzm1x9DRQK21N7KyV4PJoZsx7JSPI0S9j_HjxpSA899SYe4r3vvVfYITx6oLghBPieuKK7cLqChwl3LFxRIMBTtFhuau4Ly4LgYUfRzAQBHk6PpwfwoBatKQSIyfLef0pOSNp9v339AR6umSYIkJooy6DXXAp4qE0qH18919mKLtOgB0mkyXGzgec_wsiNpig3N7O46GrGhI5n95vl6kacWdDhS400ZVpctu4vvCNFSgjhFZSb9AtWs6rhfF6yrW08Jd7OHyWHo-RwuTydDbeKMtSoeqCOJev6r0XuHjKpSUuWmfRZMKb1CFyxFAhATH0TQuusn8KcC-pNDbcP7e7BmEv3mFGQEk4Qfv7yMDaaCk7PUSzPMZm-y7gIqvYsw4Ibmtw-7SdUyxQPqP5-97DyhjUuf4_wXrO3PE24gwfBypqND6v_mcqkUYrW0U0a3t8AvNzWkA

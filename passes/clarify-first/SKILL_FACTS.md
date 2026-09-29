@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: clarify-first
+name: Clarify First
 developer: Catalyst Forge
 version: "0.1.0"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - clarify-first
+# Skill Facts - Clarify First
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Surface load-bearing assumptions and missing information, then answer under stat
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUk1rwzAM_SvB56Qf11wLg0F32m5jFNdRElNbDpKcUkr_--SU0h522sXYT_J7es--mtm029qgjWBa44Il31-a3hOLqU0HM4Q0AWltZ8WGC0v1lmgALc5A7BNqabParjaKsFjJrIB14ufSE7wD5EL98f6l55PHruhk4kQNn3wIik6ZprR0fWbqrYMqJNs1R9BpcKgsc46TqBZXFrsqeuaCe-wTRVsKdSUjoFb5DFRl7HQt00D3ertIUZoBLTpVuxpOmcrOjCITt-v14GXMx5VLcf3w2yx-m_1-txaImkUzKeUy9TF4Hv8K51YbjyyU3aJ7ILBuXARHUMetwYQlHgQ5Jzo9gd4HYOWB-MCUSlIKhaMHAh1cA_z-qc1RXQboDpbEa2bCdxgGAh1PtQQCRBC6POk7YPFo72Fou5KPKcJkh9cQ7jaLy5V-AL1GoM_jJS1U_4lKk0BXXsO0uoXbL5Mp3jM
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkTFrJDEMhf-KUe3ZTVq3gcBBrrp0IQStrZkx65EHSZ6whP3vwbOEpEh1nXmS3_P7_AEbhHsPjAtBgIeCkseLe8yiBh4SbVTqStJnaFguau6xykTgYSPRXBkC3B3uD3fgQQ2tKQTAaHnrOyVHYu3Wf_88g4dz5gQBYhOtMug5lwIe1iZr3bf-NRkxkisV03AilMyTQ9W2rJYrq0NObsmqXc88VlmwD7yzmdgh6zuJa5xIXH8NpZ-3e5TUjRg5EoQP0Nqkn2A2WzUcj1O2uZ0OsS7Hr77D3nd4eno4Gi0rybCi7lbtVLLOv8G5esisJi3uuW9CGOc9cKZSIABX7niY7L3K-VsYcyG9qNHypV09WK2le4wkxJEShJdXD6fGqVB6Q7E8YjS9yTQJqfYso0ILmVy-7ROpZcYbjPDyevUw14VWnH5CuNXsLQ-JNvAgtFbNVner_0Fl0jj234Bg0uj6Cdst3eY

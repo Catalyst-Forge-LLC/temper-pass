@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: red-team
+name: Red Team
 developer: Catalyst Forge
 version: "0.1.0"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - red-team
+# Skill Facts - Red Team
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Attack a proposal for failure modes, incentives, and missing constraints before 
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUcFKxUAM_JVlz-17vmtvIgiC3ryJSF6btuHtbkqSVkT8d7MV0YMnb9lJMpmZfY9b7E5NLJAxdlFwaA0hxyYOuGHiBcXhGzBIb2rhlmVCb24oSly8dXU4Ha4cUQNb1QHojbY6k6jHopX14e7R3xcqgz_6VZSl1Qul5OiyysL71LUZ9JcAYRF2CFIYWcIIlFbBkHlAbQIVJ60HvIYyhEyqVKbQc1EToGIazuiL6FDOZNnH6xnhDQv4duzeo_IqtYqz2aLd8TiRzev54CvHb6_t7rW9v785GmbPoV1AdVd8TqTzX8F8NJGqjtUzcEEvgtDP-8EZ3W0XC5caTUF7Zbn8ACMlVOfB_I05lTGnyjGioAv38J6em3hey5BweAExGj1s_YJxEnR5fsswYUaTtx96j86owC6qjjv5zBkXmH6H8GWzujz45_uaoP8DGe9U_4nKkyg9WJXuJX58Ao2M2d0
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUD1rXDEQ_Ctia92d3aoLhkDAaYK7EIxO2ndPnLQrdlcvHOb-e9AzxilSpRuGYb7eYIPw6IFiQwjwA7N7wdjAQ8YNK3cUCPAULdabmvvKckHwsKFoYYIAD8fH4wN4UIs2FALEZGWbmloSkk7X799ewMO1UIYAaYiyHPRaagUPfUjnXfXFLKari64Ld9ZY3cLilljqEHSNM6p3hRLSDFDvImXXimqhi0tMahILmbozLizoErdWrCHZjBHekCIlhPAGykMmgtWsazidLsXWcT4mbqePrYd96-H5-elk2DrKoUfVvfG5Fl3_dczdQ5k9RrLCpK-CMa174Iq1QgBimtcQ2m-W6yexlIp6U8P2wd09GHOdHgsKUsIM4ecvD-dBuWJ-jWJlicn0ncaLoOrMMqzY0OT2aZ9RrVDcS0353cPKDXu8_H3C-8y58phxAw-CnbUY71b_c5XJoBRtVjcZeP8D15HZkA

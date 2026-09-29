@@ -1,6 +1,6 @@
 ---
 app_facts_version: 0.1.0
-name: temperpass
+name: TemperPass
 type: spec / tooling
 status: active
 license: MIT
@@ -22,7 +22,7 @@ generated:
   inputs_fingerprint: 5e0718c772b982c7
 ---
 
-# temperpass
+# TemperPass
 
 `spec / tooling` · **active** · MIT
 
@@ -52,4 +52,4 @@ Curated stack label for this repository — aimed at an under-a-minute skim.
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Scan `APP_FACTS.png` or open the [visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpVkEtrwzAQhP-KmbMS06uugUJL2ktyK6Vs7K2sRo9FWruYkP9e7ATa3vbxMTs7F0ywDwaJIsNCOQoXoVphoLMssyrcNW2jOQefHAyqko4VFtSpnxgGwXec6gK_PB1vRHeGvSBQciO5ZXOchQ9d8aKmeaaJbjUMypjUr9dfc8_br7oKzOsxi93hAIMhV733IY_9Z6DCuBr0LBX27YIEi-9CyQUuMJB_ZNOzhDxHTrq-geu7wWn0oV88CnVncvwRKZHjAgtJEhf1IUeWm_tBVapt29-Atj1Pi3uWXL3mMv-hnNdhPG27HNsdKYW56uYxF8eb_X5319isKV9_ALudg0c
+[appfacts-label]: https://appfacts.dev/v#af1.eNpVkMtqw0AMRX_F3PUkptvZBgotaSkku1KKYqvjaeYhZmQXE_LvxU4W7U4Sh6MrXTDBPhgkigyLI0fh8ka1wkBnWWZVuGvaRnMOPjkYVCUdKyyoUz8xDILvONUFfnk63ojuDHtBoORGcqt6Fj50xYua5pkmutUwKGNSv25_zT1vv-sqmNdlFrvDAQZDrnrvQx77r0CFcTXoWSrs-wUJFj-FkgtcYCD_yKZnCXmOnHQ9A9cPg9PoQ79kFOrO5PgzUiLHBRaSJC72IUeWW_pBVaptW10fJFTrtudpSc-Sq9dc5j-U8zqMp22XY7sjpTBX3Tzm4niz3-_ujs0iwfUXX92DBw
