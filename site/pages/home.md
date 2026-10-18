@@ -4,23 +4,31 @@ description: "Use TemperPass when an agent needs to clarify a consequential assu
 order: 0
 ---
 
-<section class="value-hero" aria-label="TemperPass overview"><div class="value-intro"><p class="value-kind">Judgment protocols for your AI agent</p><h1>Surface assumptions before they become expensive.</h1><p class="value-lede">Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install TemperPass</a><a class="cta cta-secondary" href="#what-changes-for-you">See the planning example</a></div><p class="value-limit">These are instructions for your agent, not a permission check. Host permissions still govern execution.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>“Advise on moving production Postgres next week.”</p><div class="value-result"><p><strong>What you get</strong><br>The agent names the assumed database setup and asks the question that would change its recommendation.</p></div><p>You can settle that uncertainty before committing to a costly direction.</p><p class="value-note">Fictional planning exercise. A cheap README edit should not trigger the same interruption.</p></figure></section>
-
-## What changes for you
-
-**Request.** This is a fictional planning exercise. Make no changes. Advise on moving production Postgres next week for desk-stamp, an invented product.
-
-**Assumption the pass is instructed to name.** The current database is a single-region instance, and a wrong first cut would mean a production rewrite.
-
-**What you should see.** The agent states that assumption, answers under it, and closes with one question whose answer would change the recommendation. It does not halt a cheap typo or a factual question.
-
-**Request.** Add a blank line in the README.
-
-**What you should see.** A normal answer. No preamble about assumptions. The pass is instructed to stay silent when a wrong first attempt is cheap.
+<section class="value-hero" aria-label="TemperPass overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Judgment protocols for your AI agent</p><h1>Surface assumptions before they become expensive.</h1></div><div class="value-pitch"><p class="value-lede">Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install TemperPass</a><a class="cta cta-secondary" href="#what-changes-for-you">See the question that changes the plan</a></div><p class="value-limit">These are instructions for your agent, not a permission check. Host permissions still govern execution.</p></div></div>
+<figure class="value-proof worked-example" id="what-changes-for-you" tabindex="-1">
+<figcaption>Ask the question that changes the migration plan</figcaption>
+<p class="example-context">Fictional planning exercise for desk-stamp. No production action is requested. This illustrates clarify-first; it is not an operational migration plan.</p>
+<section class="example-step" aria-labelledby="example-step-1">
+<h2 id="example-step-1"><span>1 · Your request</span> The deadline hides a consequential constraint</h2>
+<blockquote><p>Advise on moving production Postgres next week.</p></blockquote><p>The request does not say whether writes can pause during the move. That answer changes the approach, not just the wording.</p>
+</section>
+<section class="example-step example-report" aria-labelledby="example-step-2">
+<h2 id="example-step-2"><span>2 · Illustrative agent reply</span> State the assumption and still give advice</h2>
+<blockquote><p>Assuming a single-region database and an agreed write pause: rehearse the move on a copy, measure the cutover, and prove rollback before choosing a date. If the rehearsal cannot fit the allowed pause, change the approach or the date.<br><br><strong>Can the app pause writes during cutover?</strong></p></blockquote><p>The agent gives a conditional recommendation before asking the question.</p>
+</section>
+<section class="example-step" aria-labelledby="example-step-3">
+<h2 id="example-step-3"><span>3 · Your answer changes the next step</span> Two answers lead to different work</h2>
+<p><strong>Yes, an agreed pause is acceptable.</strong><br>Rehearse a paused-write cutover and check it fits that window.</p><p><strong>No, writes must continue.</strong><br>Investigate a continuous replication and cutover approach; revisit next week’s date.</p><p class="example-payoff">Settle that constraint before investing in the wrong plan.</p>
+</section>
+<p class="value-note">A cheap request such as “Add a blank line in the README” should receive a normal answer, without an assumptions preamble. Host permissions still govern any later execution.</p>
+<p class="example-links"><a href="/clarify-first">Read the clarify-first protocol</a></p>
+</figure></section>
 
 ## Four passes. Three you call. One the host may match.
 
 Everything is a **pass**. The only distinction is who is supposed to call it.
+
+<div class="comparison-scroll" role="region" aria-label="TemperPass protocol comparison" tabindex="0">
 
 | Pass | Type | Status | Does |
 | --- | --- | --- | --- |
@@ -28,6 +36,8 @@ Everything is a **pass**. The only distinction is who is supposed to call it.
 | [red-team](/red-team) | Called | **Protocol locked** | Attacks the direction on its strongest form |
 | [scope-lock](/scope-lock) | Called | **Protocol locked** | Freezes boundaries, success criteria, and explicit non-goals |
 | [tradeoff-matrix](/tradeoff-matrix) | Called | **Protocol locked** | Forces explicit criteria, weights, and scoring across meaningfully different options |
+
+</div>
 
 **Same-session check** means the protocol was tightened against prompts in the same session that wrote it. That is a sanity check, not an independent eval. **Protocol locked** means the numbered steps are stable after those runs. Neither label is a performance proof.
 
@@ -47,12 +57,16 @@ Numbered steps are easier for an agent to follow than loose guidelines. A live `
 
 The prompts and transcripts are in the repo. Recorded conditions, where they exist:
 
+<div class="comparison-scroll" role="region" aria-label="Existing evaluation runs and limits" tabindex="0">
+
 | Pass | What was checked | Conditions | Limit |
 | --- | --- | --- | --- |
 | [clarify-first evals](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/evals/clarify-first.md) | False-trigger rate, then one expensive fire | Same-session sanity check. Transcripts in `examples/clarify-first-transcripts.md`. | Independent run still owed. Host and model not named on every prompt. |
 | [red-team evals](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/evals/red-team.md) | Clean return, a hinge, baseline with and without the pass | Same session that wrote the protocol. Two failures forced step changes. | Not a clean eval. |
 | [scope-lock evals](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/evals/scope-lock.md) | Tight lock, soft lock, hire case, qualitative lock | Transcripts in `examples/`. | Same-session iteration. |
 | [tradeoff-matrix evals](https://github.com/Catalyst-Forge-LLC/temper-pass/blob/main/evals/tradeoff-matrix.md) | Distinct options, not variants of one | Transcripts in `examples/`. | Same-session iteration. |
+
+</div>
 
 An illustrative transcript, a same-session revision, and a reproducible check are different things. These files are the first two.
 
