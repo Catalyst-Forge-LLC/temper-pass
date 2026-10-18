@@ -1,17 +1,10 @@
 ---
-title: Help your agent surface consequential assumptions before hard-to-undo work.
-description: Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs.
+title: "Surface assumptions before they become expensive."
+description: "Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead."
 order: 0
 ---
 
-An installable set of passes for AI agents. Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. Use the pass that fits the task, with clarification reserved for uncertainty that materially affects the work.
-
-These are numbered protocols an agent is instructed to follow. Observable outputs are stated assumptions, a question before hard-to-undo work, a red-team that can come back clean, or a tradeoff table. The host and the model decide whether the protocol is followed. The text is not a permission check: it does not override host permissions, block a command, or read private model reasoning. For a hard stop, use a host hook.
-
-<div class="cta-row">
-  <a class="cta cta-primary" href="/install">Install in your agent</a>
-  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/temper-pass">View on GitHub</a>
-</div>
+<section class="value-hero" aria-label="TemperPass overview"><div class="value-intro"><p class="value-kind">Judgment protocols for your AI agent</p><h1>Surface assumptions before they become expensive.</h1><p class="value-lede">Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install TemperPass</a><a class="cta cta-secondary" href="#what-changes-for-you">See the planning example</a></div><p class="value-limit">These are instructions for your agent, not a permission check. Host permissions still govern execution.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>“Advise on moving production Postgres next week.”</p><div class="value-result"><p><strong>What you get</strong><br>The agent names the assumed database setup and asks the question that would change its recommendation.</p></div><p>You can settle that uncertainty before committing to a costly direction.</p><p class="value-note">Fictional planning exercise. A cheap README edit should not trigger the same interruption.</p></figure></section>
 
 ## What changes for you
 

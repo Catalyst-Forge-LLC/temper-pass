@@ -1,6 +1,6 @@
 # TemperPass
 
-Tempered judgment your agent can install.
+Surface assumptions before they become expensive. TemperPass supplies installable judgment protocols for your AI agent.
 
 Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. These are numbered instructions an agent is told to follow. The host and the model decide whether they are followed.
 
