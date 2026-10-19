@@ -8,9 +8,24 @@ Written **TemperPass**. A temper mill, not a mood.
 
 ## What changes for you
 
-**Request.** This is a fictional planning exercise. Make no changes. Advise on moving production Postgres next week for desk-stamp, an invented product. The pass is instructed to name the load-bearing assumption, answer under it, and close with one question.
+**Your request:** “This is a fictional planning exercise for desk-stamp. Make no changes. Advise on moving production Postgres next week.”
 
-**Request.** Add a blank line in the README. The pass is instructed to stay silent. A wrong first attempt is cheap.
+**Illustrative clarify-first reply:**
+
+> Assuming a single-region database and an agreed write pause: rehearse the move on a copy, measure the cutover, and prove rollback before choosing a date. If the rehearsal cannot fit the allowed pause, change the approach or the date.
+>
+> Can the app pause writes during cutover?
+
+Your answer changes the next step:
+
+| Answer | Work to do next |
+| --- | --- |
+| Yes, an agreed pause is acceptable | Rehearse a paused-write cutover and check that it fits the window. |
+| No, writes must continue | Investigate continuous replication and cutover; revisit next week's date. |
+
+You settle the constraint before investing in the wrong plan. This illustrates the protocol, not an operational migration plan or a recorded evaluation. The agent gives a conditional answer before asking its question.
+
+**Cheap request:** “Add a blank line in the README.” The pass is instructed to stay silent and let the agent do the edit. A wrong first attempt is cheap.
 
 The pass tells the agent to ask first only before work you cannot undo: send, delete, spend, write to production, commit the user publicly. Ambiguity alone is not a reason to ask. Ambiguity plus irreversibility is. This is an instruction the model may still skip, not a permission check. For a hard stop, use a host hook or permission setting.
 
