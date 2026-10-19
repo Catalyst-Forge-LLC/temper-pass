@@ -17,6 +17,7 @@ data:
   accomplished:
     - "Added a conditional migration reply, the decisive writes-pause question, and the two different next actions to the README."
     - "Kept the cheap-edit exception and marked the migration as fictional. The package tarball contains the updated README."
+    - Prepared version 0.1.2 locally because npm already contains 0.1.1 while this checkout still declared 0.1.0. Repacked and verified the README at the prepared version.
   left_off: Changes are local for owner review. No push, deployment, publication, or phase transition.
   next_steps:
     - Owner reviews the changes and releases the affected site and package separately.
