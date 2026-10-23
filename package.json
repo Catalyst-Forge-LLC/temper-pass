@@ -1,6 +1,6 @@
 {
 	"name": "temperpass",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"private": false,
 	"type": "module",
 	"description": "Tempered judgment your agent can install. Expert skills for AI agents.",
