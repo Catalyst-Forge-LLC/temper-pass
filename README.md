@@ -1,6 +1,6 @@
 # TemperPass
 
-Surface assumptions before they become expensive. TemperPass supplies installable judgment protocols for your AI agent.
+**Surface assumptions before they become expensive.** TemperPass supplies four skills that help your agent clarify assumptions, challenge a plan, hold scope, or compare alternatives.
 
 Give your agent a protocol for naming consequential assumptions, checking scope, challenging a direction, or comparing tradeoffs. These are numbered instructions an agent is told to follow. The host and the model decide whether they are followed.
 

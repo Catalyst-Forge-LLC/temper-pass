@@ -4,9 +4,9 @@ const github = 'https://github.com/Catalyst-Forge-LLC/temper-pass';
 
 export default defineFilepressConfig({
 	title: 'TemperPass',
-	description: "Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead.",
+	description: "Four skills help your agent clarify consequential assumptions, challenge a plan, hold scope, or compare alternatives. Choose the pass that fits the decision so the next step follows an explicit constraint or tradeoff.",
 	tagline: 'Tempered judgment for AI agents.',
-	lede: "Judgment protocols for your AI agent",
+	lede: "Four decision-review skills for your AI agent",
 	url: 'https://temperpass.dev',
 	author: 'Catalyst Forge LLC',
 	homePage: 'home',

@@ -1,10 +1,10 @@
 ---
 title: "Surface assumptions before they become expensive."
-description: "Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead."
+description: "Four skills help your agent clarify consequential assumptions, challenge a plan, hold scope, or compare alternatives. Choose the pass that fits the decision so the next step follows an explicit constraint or tradeoff."
 order: 0
 ---
 
-<section class="value-hero" aria-label="TemperPass overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Judgment protocols for your AI agent</p><h1>Surface assumptions before they become expensive.</h1></div><div class="value-pitch"><p class="value-lede">Use TemperPass when an agent needs to clarify a consequential assumption, check scope, challenge a direction, or compare tradeoffs. Choose the pass that matches the decision ahead.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install TemperPass</a><a class="cta cta-secondary" href="#what-changes-for-you">See the question that changes the plan</a></div><p class="value-limit">These are instructions for your agent, not a permission check. Host permissions still govern execution.</p></div></div>
+<section class="value-hero" aria-label="TemperPass overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Four decision-review skills for your AI agent</p><h1>Surface assumptions before they become expensive.</h1></div><div class="value-pitch"><p class="value-lede">Four skills help your agent clarify consequential assumptions, challenge a plan, hold scope, or compare alternatives. Choose the pass that fits the decision so the next step follows an explicit constraint or tradeoff.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install TemperPass</a><a class="cta cta-secondary" href="#what-changes-for-you">See the question that changes the plan</a></div><p class="value-limit">These are instructions for your agent, not a permission check. Host permissions still govern execution.</p></div></div>
 <figure class="value-proof worked-example" id="what-changes-for-you" tabindex="-1">
 <figcaption>Ask the question that changes the migration plan</figcaption>
 <p class="example-context">Fictional planning exercise for desk-stamp. No production action is requested. This illustrates clarify-first; it is not an operational migration plan.</p>
