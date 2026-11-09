@@ -1,6 +1,6 @@
 {
 	"name": "temperpass",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"private": false,
 	"type": "module",
 	"description": "Four agent skills for clarifying assumptions, challenging plans, holding scope, and comparing alternatives.",
